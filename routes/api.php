@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\API\UserController;
+use App\Http\Controllers\API\{UserController, NearestLocation};
 
 /*
 |--------------------------------------------------------------------------
@@ -26,5 +26,6 @@ Route::post('register',[UserController::class,'RegisterUser']);
 
 Route::group(['middleware' => 'auth:sanctum'],function(){
     Route::get('user',[UserController::class,'userDetails']);
+    Route::get('location/{latlon}',[NearestLocation::class,'nearestLocation']);
     Route::get('logout',[UserController::class,'logout']);
 });

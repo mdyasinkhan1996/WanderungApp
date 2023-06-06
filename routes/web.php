@@ -17,4 +17,4 @@ use App\Http\Controllers\Googlemap;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('map', [Googlemap::class, 'getNearestPlaces']);
+Route::get('map', [Googlemap::class, 'mapresponse']);
