@@ -26,6 +26,7 @@ Route::post('register',[UserController::class,'RegisterUser']);
 
 Route::group(['middleware' => 'auth:sanctum'],function(){
     Route::get('user',[UserController::class,'userDetails']);
-    Route::get('location/{latlon}',[NearestLocation::class,'nearestLocation']);
+    Route::get('location/{param}',[NearestLocation::class,'nearestLocation']);
+    Route::post('location',[NearestLocation::class,'nearest_location']);
     Route::get('logout',[UserController::class,'logout']);
 });
