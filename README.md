@@ -17,9 +17,7 @@ For resigter put four parameters "http://localhost:8000/api/register"
 
 both of login or register get a bearer token
 Get any data from this application put this bearer token for Authentication. Without token request is unauthorized.
-Get place name by coordinate 'get' method "http://localhost:8000/api/location/lat=62.54503862060&lon=94.78433640546564"
+Get place name by coordinate two parameter 'get' method "http://localhost:8000/api/location?lat=62.54503862060&lon=94.78433640546564"
 
-or
-Get place name by coordinate 'post' method put two parameters "http://localhost:8000/api/location
 1. lat
 2. lon
