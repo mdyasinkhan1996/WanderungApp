@@ -20,4 +20,6 @@ Get any data from this application put this bearer token for Authentication. Wit
 Get place name by coordinate 'get' method "http://localhost:8000/api/location/lat=62.54503862060&lon=94.78433640546564"
 
 or
-Get place name by coordinate 'post' method "http://localhost:8000/api/location?lat=62.54503862060&lon=94.78433640546564"
+Get place name by coordinate 'post' method put two parameters "http://localhost:8000/api/location
+1. lat
+2. lon
